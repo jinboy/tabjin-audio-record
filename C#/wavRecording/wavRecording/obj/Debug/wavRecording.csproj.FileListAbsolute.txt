@@ -1,0 +1,8 @@
+E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\bin\Debug\wavRecording.exe
+E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\bin\Debug\wavRecording.pdb
+E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.csprojResolveAssemblyReference.cache
+E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.Recording.resources
+E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.Properties.Resources.resources
+E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.csproj.GenerateResource.Cache
+E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.exe
+E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.pdb

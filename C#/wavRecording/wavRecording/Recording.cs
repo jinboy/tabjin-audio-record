@@ -31,7 +31,7 @@ namespace wavRecording {
             comboBoxChannels.SelectedIndex = 0;
 
             // step1: 首先，选择将录制的音频放在何处。将转到桌面上recorded.wav一个NAudioDemo文件夹中的文件
-            var outputFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "tabjinAudio");
+            outputFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "tabjinAudio");
             Directory.CreateDirectory(outputFolder);
             var outputFilePath = Path.Combine(outputFolder, "recorded.wav");
         }
@@ -70,14 +70,14 @@ namespace wavRecording {
             writer = null;
         }
 
-        private void buttonRecord_Click(object sender, EventArgs e) {
+        private void OnButtonStartRecordingClick(object sender, EventArgs e) {
 
             if (captureDevice == null) {//捕获设备
                 captureDevice = CreateWaveInDevice();
             }
-
             outputFilename = GetFileName();
-            writer = new WaveFileWriter(Path.Combine(outputFolder, outputFilename), captureDevice.WaveFormat);
+            var that = this;
+            writer = new WaveFileWriter(Path.Combine(this.outputFolder, outputFilename), captureDevice.WaveFormat);
 
             captureDevice.StartRecording();
             SetControlStates(true);

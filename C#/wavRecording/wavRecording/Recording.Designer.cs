@@ -58,7 +58,7 @@
             this.buttonStartRecording.TabIndex = 1;
             this.buttonStartRecording.Text = "开始";
             this.buttonStartRecording.UseVisualStyleBackColor = true;
-            this.buttonStartRecording.Click += new System.EventHandler(this.buttonRecord_Click);
+            this.buttonStartRecording.Click += new System.EventHandler(this.OnButtonStartRecordingClick);
             // 
             // buttonStopRecording
             // 
@@ -104,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1282, 595);
+            this.ClientSize = new System.Drawing.Size(990, 463);
             this.Controls.Add(this.listBoxRecordings);
             this.Controls.Add(this.comboBoxChannels);
             this.Controls.Add(this.comboBoxSampleRate);
