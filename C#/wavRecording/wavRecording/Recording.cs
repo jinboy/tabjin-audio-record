@@ -70,17 +70,28 @@ namespace wavRecording {
             writer = null;
         }
 
+        /// <summary>
+        /// 事件处理程序。
+        /// 单击时Record，将创建一个新的WaveFileWriter，指定要创建的WAV文件的路径以及要记录的格式。
+        /// 该格式必须与记录设备格式相同，因为该格式将是接收记录数据的格式。所以我们用waveIn.WaveFormat。
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnButtonStartRecordingClick(object sender, EventArgs e) {
 
             if (captureDevice == null) {//捕获设备
                 captureDevice = CreateWaveInDevice();
             }
+            var a = captureDevice;
             outputFilename = GetFileName();
-            var that = this;
-            writer = new WaveFileWriter(Path.Combine(this.outputFolder, outputFilename), captureDevice.WaveFormat);
+            var path = Path.Combine(outputFolder, outputFilename);
+            if (outputFolder != null && outputFilename != null) {
+                writer = new WaveFileWriter(Path.Combine(outputFolder, outputFilename), captureDevice.WaveFormat);
+                captureDevice.StartRecording();
+                SetControlStates(true);
+            }
 
-            captureDevice.StartRecording();
-            SetControlStates(true);
+
         }
 
 
@@ -111,7 +122,7 @@ namespace wavRecording {
             var sampleRate = string.Format("{0}kHz", captureDevice.WaveFormat.SampleRate / 1000);
             var channels = captureDevice.WaveFormat.Channels == 1 ? "mono" : "stereo";
 
-            return string.Format("{0} {1} {2} {3}.wav", deviceName, sampleRate, channels, DateTime.Now);// DateTime.Now:yyy-MM-dd HH-mm-ss
+            return string.Format("{0} {1} {2} {3}.wav", deviceName, sampleRate, channels, DateTime.Now.Ticks.ToString());// DateTime.Now:yyy-MM-dd HH-mm-ss    DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
         }
 
 
