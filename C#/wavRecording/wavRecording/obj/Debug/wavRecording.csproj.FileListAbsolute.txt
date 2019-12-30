@@ -6,3 +6,13 @@ E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.
 E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.csproj.GenerateResource.Cache
 E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.exe
 E:\work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.pdb
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.exe
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.pdb
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\bin\Debug\wavRecording.exe
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\bin\Debug\wavRecording.pdb
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.csprojResolveAssemblyReference.cache
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.Recording.resources
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.Properties.Resources.resources
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\obj\Debug\wavRecording.csproj.GenerateResource.Cache
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\bin\Debug\wavRecording.exe.config
+C:\Users\tabjin\Desktop\yunzhi_work\tabjin-audio-record\C#\wavRecording\wavRecording\bin\Debug\Newtonsoft.Json.dll

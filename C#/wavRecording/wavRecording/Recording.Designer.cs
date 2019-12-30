@@ -32,6 +32,7 @@
             this.comboBoxChannels = new System.Windows.Forms.ComboBox();
             this.listBoxRecordings = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboWaveInDevice
@@ -45,7 +46,7 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(681, 144);
-            this.progressBar1.Maximum = 30;
+            this.progressBar1.Maximum = 5;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(257, 21);
             this.progressBar1.TabIndex = 4;
@@ -100,11 +101,22 @@
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(292, 351);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "测试语音";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Recording
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(990, 463);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listBoxRecordings);
             this.Controls.Add(this.comboBoxChannels);
             this.Controls.Add(this.comboBoxSampleRate);
@@ -128,6 +140,7 @@
         private System.Windows.Forms.ComboBox comboBoxChannels;
         private System.Windows.Forms.ListBox listBoxRecordings;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

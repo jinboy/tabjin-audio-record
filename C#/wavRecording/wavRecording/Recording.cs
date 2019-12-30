@@ -155,7 +155,8 @@ namespace wavRecording {
                 //Debug.WriteLine("Flushing Data Available");
                 writer.Write(e.Buffer, 0, e.BytesRecorded);
                 int secondsRecorded = (int)(writer.Length / writer.WaveFormat.AverageBytesPerSecond);
-                if (secondsRecorded >= 30) {
+                //if (secondsRecorded >= 30) {
+                if (secondsRecorded >= 5) {
                     StopRecording();
                 }
                 else {
@@ -182,6 +183,11 @@ namespace wavRecording {
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e) {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
     }
