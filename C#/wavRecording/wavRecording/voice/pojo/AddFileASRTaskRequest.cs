@@ -44,17 +44,17 @@ namespace wavRecording.pojo {
         /// <summary>
         /// 识别结果是否带时码信息，0不带，1带。默认是1
         /// </summary>
-        private int resultIncludeTime;
+        private int resultIncludeTime = 1;
         
         /// <summary>
         /// >带时码结果是否包含标点符号。只有ResultIncludeTime字段为1时生效。0，不包含标点；1，包含标点；默认1
         /// </summary>
-        private int includePunctuation;
+        private int includePunctuation = 1;
 
         /// <summary>
         /// 语音语言类型：cn：普通话，hk；粤语；默认普通话cn
         /// </summary>
-        private string language;
+        private string language = "cn";
 
         private ExtendAttribute extendAttribute;
         public ExtendAttribute ExtendAttribute {

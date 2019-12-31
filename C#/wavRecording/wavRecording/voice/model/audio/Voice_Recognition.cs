@@ -9,10 +9,13 @@ using wavRecording.utils.http;
 using wavRecording.utils.response;
 using wavRecording.voice.utils;
 
-namespace wavRecording.model.audio {
-    public class Voice_Recognition {
-        static AddFileASRTaskResponse postVoiceRecognitionXML(AddFileASRTaskRequest addFileASRTaskRequest) {
-            string url = UrlConstant.baseUrl + "/LeoVideoAPI/service/addFileASRTask";
+namespace wavRecording.model.audio
+{
+    public class Voice_Recognition
+    {
+        public static AddFileASRTaskResponse postVoiceRecognitionXML(AddFileASRTaskRequest addFileASRTaskRequest)
+        {
+            string url = UrlConstant.BASE_URL + "/LeoVideoAPI/service/addFileASRTask";
             string data = XMLHelper.XmlSerialize(addFileASRTaskRequest);
             string responseContent = Http.HttpPostXML(url, data);
 
@@ -20,7 +23,8 @@ namespace wavRecording.model.audio {
             return null;
         }
 
-        static string buildXML(AddFileASRTaskRequest addFileASRTaskRequest) {
+        static string buildXML(AddFileASRTaskRequest addFileASRTaskRequest)
+        {
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
             sb.Append("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
             sb.Append("<AddFileASRTaskRequest>");
@@ -40,14 +44,18 @@ namespace wavRecording.model.audio {
             return sb.ToString();
         }
 
-        static string buildMultitaskSourceFileXML(List<SourceFile> sourceFileList) {
+        static string buildMultitaskSourceFileXML(List<SourceFile> sourceFileList)
+        {
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
             sb.Append("<SourceFile>");
-            if (sourceFileList.Count == 0) {
+            if (sourceFileList.Count == 0)
+            {
                 return "";
             }
-            else {
-                foreach (SourceFile sourceFile in sourceFileList) {
+            else
+            {
+                foreach (SourceFile sourceFile in sourceFileList)
+                {
                     sb.AppendFormat("<FileType>{0}</FileType>", sourceFile.FileType);
                     sb.AppendFormat("<FileName>{0}</FileName>", sourceFile.FileName);
                     sb.AppendFormat("<PathInfo>{0}</PathInfo>", sourceFile.PathInfo);

@@ -38,14 +38,14 @@
             // comboWaveInDevice
             // 
             this.comboWaveInDevice.FormattingEnabled = true;
-            this.comboWaveInDevice.Location = new System.Drawing.Point(279, 188);
+            this.comboWaveInDevice.Location = new System.Drawing.Point(292, 74);
             this.comboWaveInDevice.Name = "comboWaveInDevice";
             this.comboWaveInDevice.Size = new System.Drawing.Size(121, 20);
             this.comboWaveInDevice.TabIndex = 0;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(681, 144);
+            this.progressBar1.Location = new System.Drawing.Point(618, 31);
             this.progressBar1.Maximum = 5;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(257, 21);
@@ -53,7 +53,7 @@
             // 
             // buttonStartRecording
             // 
-            this.buttonStartRecording.Location = new System.Drawing.Point(415, 105);
+            this.buttonStartRecording.Location = new System.Drawing.Point(292, 31);
             this.buttonStartRecording.Name = "buttonStartRecording";
             this.buttonStartRecording.Size = new System.Drawing.Size(75, 23);
             this.buttonStartRecording.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             // buttonStopRecording
             // 
-            this.buttonStopRecording.Location = new System.Drawing.Point(590, 105);
+            this.buttonStopRecording.Location = new System.Drawing.Point(385, 31);
             this.buttonStopRecording.Name = "buttonStopRecording";
             this.buttonStopRecording.Size = new System.Drawing.Size(75, 23);
             this.buttonStopRecording.TabIndex = 2;
@@ -73,7 +73,7 @@
             // comboBoxSampleRate
             // 
             this.comboBoxSampleRate.FormattingEnabled = true;
-            this.comboBoxSampleRate.Location = new System.Drawing.Point(279, 233);
+            this.comboBoxSampleRate.Location = new System.Drawing.Point(292, 110);
             this.comboBoxSampleRate.Name = "comboBoxSampleRate";
             this.comboBoxSampleRate.Size = new System.Drawing.Size(121, 20);
             this.comboBoxSampleRate.TabIndex = 3;
@@ -81,7 +81,7 @@
             // comboBoxChannels
             // 
             this.comboBoxChannels.FormattingEnabled = true;
-            this.comboBoxChannels.Location = new System.Drawing.Point(440, 233);
+            this.comboBoxChannels.Location = new System.Drawing.Point(440, 74);
             this.comboBoxChannels.Name = "comboBoxChannels";
             this.comboBoxChannels.Size = new System.Drawing.Size(121, 20);
             this.comboBoxChannels.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             this.listBoxRecordings.FormattingEnabled = true;
             this.listBoxRecordings.ItemHeight = 12;
-            this.listBoxRecordings.Location = new System.Drawing.Point(735, 287);
+            this.listBoxRecordings.Location = new System.Drawing.Point(618, 89);
             this.listBoxRecordings.Name = "listBoxRecordings";
             this.listBoxRecordings.Size = new System.Drawing.Size(120, 88);
             this.listBoxRecordings.TabIndex = 5;
@@ -103,7 +103,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(292, 351);
+            this.button1.Location = new System.Drawing.Point(292, 154);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -126,21 +126,22 @@
             this.Controls.Add(this.comboWaveInDevice);
             this.Name = "Recording";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Recording_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboWaveInDevice;
-        private System.Windows.Forms.Button buttonStartRecording;
-        private System.Windows.Forms.Button buttonStopRecording;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ComboBox comboBoxSampleRate;
-        private System.Windows.Forms.ComboBox comboBoxChannels;
         private System.Windows.Forms.ListBox listBoxRecordings;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button buttonStartRecording;
+        public System.Windows.Forms.Button buttonStopRecording;
+        public System.Windows.Forms.ProgressBar progressBar1;
+        public System.Windows.Forms.ComboBox comboWaveInDevice;
+        public System.Windows.Forms.ComboBox comboBoxChannels;
+        public System.Windows.Forms.ComboBox comboBoxSampleRate;
     }
 }
 
